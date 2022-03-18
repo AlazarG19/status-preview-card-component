@@ -23,6 +23,7 @@ html {
   display: none;
 }
 body {
+  background: var(--Verydarkblue);
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -114,10 +115,18 @@ main {
   font-weight: 400;
 }
 @media (max-width: 892px) {
+  html{
+    overflow: visible;
+	overflow-x : hidden;  
+}
+  body{
+    height:auto;
+  }
   main {
     width: 85%;
     flex-direction: column-reverse;
     justify-content: start;
+    margin: 88px 0;
   }
   .img-desktop {
     display: none;
